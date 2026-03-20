@@ -52,6 +52,7 @@ const ChartPreview = ({ chartType, dataset, config, is3D }) => {
           theme={config.theme !== 'default' ? config.theme : undefined}
           style={{ height: '100%', width: '100%' }}
           opts={{ renderer: 'canvas' }}
+          notMerge={true}
         />
       </div>
     </div>
